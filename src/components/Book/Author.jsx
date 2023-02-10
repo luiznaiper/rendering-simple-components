@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Author = () => {
-  return <h4>Alice Schertle</h4>
+  const title = 'Alice Schertle'
+  return <h4>{title.toUpperCase()}</h4>
 }
 
 export default Author
