@@ -5,11 +5,11 @@ import Title from './Title'
 
 const Book = () => {
   return (
-    <>
+    <article className="book">
       <Image />
       <Title />
       <Author />
-    </>
+    </article>
   )
 }
 
