@@ -3,12 +3,12 @@ import Author from './Author'
 import Image from './Image'
 import Title from './Title'
 
-const Book = () => {
+const Book = ({ img, title, author }) => {
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <Image img={img} title={title} />
+      <Title title={title} />
+      <Author author={author} />
     </article>
   )
 }
