@@ -21,7 +21,7 @@ const Booklist = () => {
   return (
     <section className="book-list">
       {books.map((book) => {
-        return <Book book={book} key={book.id} />
+        return <Book {...book} key={book.id} />
       })}
     </section>
   )
