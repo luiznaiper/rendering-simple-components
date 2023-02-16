@@ -18,10 +18,14 @@ const books = [
 ]
 
 const Booklist = () => {
+  const getBook = (id) => {
+    const book = books.find((book) => book.id === id)
+    console.log(book.title)
+  }
   return (
     <section className="book-list">
       {books.map((book) => {
-        return <Book {...book} key={book.id} />
+        return <Book {...book} key={book.id} getBook={getBook} />
       })}
     </section>
   )
