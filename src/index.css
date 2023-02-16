@@ -81,6 +81,7 @@ body {
 .book-number {
   background-color: var(--orange);
   padding: 1rem;
-  border-radius: 50%;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   color: var(--white);
 }
