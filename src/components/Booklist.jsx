@@ -5,8 +5,8 @@ import Book from './Book'
 const Booklist = () => {
   return (
     <section className="book-list">
-      {books.map((book) => {
-        return <Book {...book} key={book.id} />
+      {books.map((book, index) => {
+        return <Book {...book} key={book.id} number={index} />
       })}
     </section>
   )

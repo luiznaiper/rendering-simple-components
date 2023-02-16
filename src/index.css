@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  orange: #fb8122;
+  --orange: #fb8122;
   --just-black: #20202a;
   --black: #191923;
   --dark-grey: #2c2c39;
@@ -24,6 +24,12 @@ html {
 body {
   background-color: var(--just-black);
   color: var(--white);
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 3rem;
 }
 
 .book-list {
@@ -64,4 +70,17 @@ body {
   font-size: 0.75rem;
   color: var(--just-black);
   letter-spacing: 0.1rem;
+}
+
+.number-container {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.book-number {
+  background-color: var(--orange);
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--white);
 }
