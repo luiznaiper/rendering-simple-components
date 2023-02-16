@@ -3,13 +3,12 @@ import Author from './Author'
 import Image from './Image'
 import Title from './Title'
 
-const Book = ({ id, img, title, author, getBook }) => {
+const Book = ({ img, title, author }) => {
   return (
     <article className="book">
       <Image img={img} title={title} />
       <Title title={title} />
       <Author author={author} />
-      <button onClick={() => getBook(id)}>Click Me</button>
     </article>
   )
 }
